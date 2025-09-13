@@ -1,4 +1,3 @@
-" ========= BASIC SETTINGS =========
 
 execute pathogen#infect()
 
@@ -25,9 +24,8 @@ set scrolloff=5              " keep 5 lines visible around cursor
 set nowrap                   " don't wrap lines
 set encoding=utf-8
 set wrap 
-" ========= COLORS =========
-"colorscheme torte           " built-in Vim colorscheme (change if desired)
-set background=dark
+
+"colorscheme torte           set background=dark
 colorscheme gruvbox 
 
 " ========= AUTOCOMPLETE =========
@@ -55,9 +53,6 @@ nnoremap <Leader>h :nohlsearch<CR>
 
 
 
-" ========= PLUGINS (OPTIONAL, VUNDLE LIGHT) =========
-" To enable plugins later, use Pathogen.
-
 "VimWiki 
 let g:vimwiki_list = [{
 \ 'path': '~/vimwiki/',
@@ -67,7 +62,7 @@ nmap <Leader>wt <Plug>VimwikiToggleListItem
 " Enable Pathogen
 execute pathogen#infect()
 
-" Enable YCM
+" Enable YCM for autocompletion 
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
 
 " Enable file type plugins
@@ -85,12 +80,12 @@ set number
 " Enable syntax highlighting
 syntax enable
 
-" my file xplorer 
+" my sexxxxyyy file xplorer
 nnoremap <C-z> :NERDTreeToggle<CR> 
 nnoremap <C-p> :w<CR>:!python3 %<CR> 
 " this runs pyhton3 in a shell , shows output and then returns to vim 
 
-"==================== VIM STARTIFY.config========================
+"==================== VIM STARTIFY.config babyyyy========================
 
 nnoremap <C-s> :Startify<CR>
 let g:startify_bookmarks = [
