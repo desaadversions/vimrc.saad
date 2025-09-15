@@ -3,32 +3,32 @@ execute pathogen#infect()
 
 
 set mouse=a 
-set nocompatible              " disable old-school vi compatibility
-syntax on                    " enable syntax highlighting
-filetype plugin indent on    " enable filetype detection and indentation
-set number                   " show line numbers
-set relativenumber           " relative line numbers
-set tabstop=4                " tab size
-set shiftwidth=4             " indentation size
-set expandtab                " use spaces instead of tabs
-set autoindent               " copy indent from current line
-set smartindent              " smarter auto-indent
+set nocompatible            
+syntax on                     
+filetype plugin indent on     
+set number                    
+set relativenumber           
+set tabstop=4                 
+set shiftwidth=4              
+set expandtab                 
+set autoindent                
+set smartindent               
 set backspace=indent,eol,start
-set clipboard=unnamed        " use system clipboard
-set cursorline               " highlight current line
-set wildmenu                 " tab-completion menu
-set showmatch                " highlight matching brackets
-set incsearch                " search as you type
-set hlsearch                 " highlight search results
-set scrolloff=5              " keep 5 lines visible around cursor
-set nowrap                   " don't wrap lines
+set clipboard=unnamed         
+set cursorline                
+set wildmenu                  
+set showmatch                 
+set incsearch                 
+set hlsearch                  
+set scrolloff=5               
+set nowrap                    
 set encoding=utf-8
 set wrap 
 
-"colorscheme torte           set background=dark
+"colorscheme torte           
+set background=dark
 colorscheme gruvbox 
 
-" ========= AUTOCOMPLETE =========
 set completeopt=menuone,noselect
 set omnifunc=syntaxcomplete#Complete
 inoremap <C-Space> <C-x><C-o>  " ctrl-space to trigger completion
@@ -62,7 +62,7 @@ nmap <Leader>wt <Plug>VimwikiToggleListItem
 " Enable Pathogen
 execute pathogen#infect()
 
-" Enable YCM for autocompletion 
+" Enable YCM for autocompletion babyyy
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
 
 " Enable file type plugins
